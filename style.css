@@ -1,52 +1,185 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-image: url("../ilovedesign/images/b1.png");
-    height:90vh;
+    height: 90vh;
     background-size: cover;
 
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    transition-property: transform;
+
 }
-.title{
+
+.title {
     text-align: center;
     text-transform: uppercase;
     color: white;
 }
-.main-title{
+
+.main-title {
     font-size: 80px;
     font-family: Lato;
     height: 150px;
-
+    animation-name: moveInLeft;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
 }
-.subtitle{
+.main-title:hover {
+    transform:scale(0.8);
+}
+
+.subtitle {
     font-size: 18pt;
     font-family: Lato;
     text-transform: initial;
-    }
-.butto{
+}
+
+.butto {
     margin: 50px;
-    position:relative;
+    position: relative;
 
 }
-.button{
 
+.button {
 
-}
-.arrow{
+    }
+
+.arrow {
     position: absolute;
-    top: 15px; left: 15px;
+    top: 15px;
+    left: 15px;
 }
 
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("images/b2.png");
+    height: 90vh;
+    background-size: cover;
+}
+
+.text {
+    font-family: Lato;
+    text-transform: initial;
+    font-size: 21pt;
+    color: rgba(70, 75, 79, 255);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 851px;
+    line-height: 1.5;
+    margin-top:35px;
+}
+.titletwo{
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 35pt;
+    color: rgba(70, 75, 79, 255);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contentbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+}
+span{
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 800;
+    color: rgba(70, 75, 79, 255);
+    }
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 286px;
+    height: 200px;
+
+}
+.contentbar ul li p{
+    font-family: Lato;
+    text-transform: initial;
+    font-size: 10pt;
+    color: rgba(136, 138, 139, 255);
+    line-height: 1.8;
+    height: 109px ;
+    margin: 15px;
+}
+.contentbar ul li span {
+    margin: 15px;
+}
+.test{
+    animation-name: test;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    transition-property: transform;
+}
+.test:hover {
+    transform: scale(-1);
+}
+@keyframes test {
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: scaleX(-1);
+    }
+
+}
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(-80px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate();
+    }
+}
+@keyframes logo {
+   0%{
+       transform: translateY(-500px);
+       opacity: 0;
+   }
+    100%{
+        transform: scaleX(-1);
+    }
+}
 
