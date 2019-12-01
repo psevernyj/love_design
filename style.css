@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../ilovedesign/images/b1.png");
+    height:90vh;
+    background-size: cover;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.main-title{
+    font-size: 80px;
+    font-family: Lato;
+    height: 150px;
+
+}
+.subtitle{
+    font-size: 18pt;
+    font-family: Lato;
+    text-transform: initial;
+    }
+.butto{
+    margin: 50px;
+    position:relative;
+
+}
+.button{
+
+
+}
+.arrow{
+    position: absolute;
+    top: 15px; left: 15px;
+}
+
+
